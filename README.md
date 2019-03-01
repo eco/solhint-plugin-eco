@@ -1,4 +1,5 @@
 # Solhint Plugin for the Beam Network Style Guide _(solhint-plugin-beam)_
+[![Build Status](https://travis-ci.com/BeamNetwork/solhint-plugin-beam.svg?branch=master)](https://travis-ci.com/BeamNetwork/solhint-plugin-beam)
 > A solhint plugin to enforce Beam's style rules
 
 Provides solhint rules to enforce the extra Solidity style rules used at Beam
