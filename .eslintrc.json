@@ -1,0 +1,30 @@
+{
+  "extends": "airbnb-base",
+  "plugins": [
+    "chai-friendly"
+  ],
+  "rules": {
+    "no-unused-expressions": 0,
+    "chai-friendly/no-unused-expressions": 2
+  },
+  "env": {
+    "node": true
+  },
+  "root": true,
+  "overrides": [
+    {
+      "files": [ "test/**" ],
+      "env": {
+        "jest": true
+      },
+      "plugins": [ "jest" ],
+      "rules": {
+        "jest/no-disabled-tests": "warn",
+        "jest/no-focused-tests": "error",
+        "jest/no-identical-title": "error",
+        "jest/prefer-to-have-length": "warn",
+        "jest/valid-expect": "error"
+      }
+    }
+  ]
+}

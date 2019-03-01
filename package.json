@@ -1,0 +1,36 @@
+{
+  "name": "solhint-plugin-beam",
+  "version": "0.0.1",
+  "description": "A solhint plugin to enfore Beam's style rules",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BeamNetwork/solhint-plugin-beam.git"
+  },
+  "keywords": [
+    "solhint",
+    "solidity",
+    "plugin"
+  ],
+  "author": "Michael Gregson <mgregson@beam.io>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BeamNetwork/solhint-plugin-beam/issues"
+  },
+  "homepage": "https://github.com/BeamNetwork/solhint-plugin-beam#readme",
+  "devDependencies": {
+    "assert": "^1.4.1",
+    "eslint": "^5.14.1",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jest": "^22.3.0",
+    "jest": "^24.1.0",
+    "jest-runner-mocha": "^0.6.0",
+    "mocha": "^6.0.0",
+    "solhint": "^2.0.0"
+  }
+}
