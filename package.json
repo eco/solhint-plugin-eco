@@ -1,6 +1,6 @@
 {
   "name": "solhint-plugin-beam",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A solhint plugin to enfore Beam's style rules",
   "main": "index.js",
   "scripts": {
@@ -23,14 +23,11 @@
   },
   "homepage": "https://github.com/BeamNetwork/solhint-plugin-beam#readme",
   "devDependencies": {
-    "assert": "^1.4.1",
-    "eslint": "^5.14.1",
+    "eslint": "^5.16.0",
     "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-plugin-import": "^2.16.0",
-    "eslint-plugin-jest": "^22.3.0",
-    "jest": "^24.1.0",
-    "jest-runner-mocha": "^0.6.0",
-    "mocha": "^6.0.0",
-    "solhint": "^2.0.0"
+    "eslint-plugin-import": "^2.17.3",
+    "eslint-plugin-jest": "^22.6.4",
+    "jest": "^24.8.0",
+    "solhint": "^2.1.0"
   }
 }
