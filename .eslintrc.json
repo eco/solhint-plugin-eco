@@ -1,6 +1,7 @@
 {
   "extends": "airbnb-base",
   "plugins": [
+    "jest"
   ],
   "rules": {
     "no-unused-expressions": 0
@@ -15,7 +16,6 @@
       "env": {
         "jest": true
       },
-      "plugins": [ "jest" ],
       "rules": {
         "jest/no-disabled-tests": "warn",
         "jest/no-focused-tests": "error",
