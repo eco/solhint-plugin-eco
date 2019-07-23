@@ -1,6 +1,6 @@
 {
   "name": "solhint-plugin-beam",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A solhint plugin to enfore Beam's style rules",
   "main": "index.js",
   "scripts": {
