@@ -19,7 +19,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * @fileoverview Require that events arguments be prefixed by _
+ * @fileoverview Require that events arguments not prefixed by _
  * @author Kirill Moizik <kirill@beam.io>
  */
 const ruleId = 'underscore-events-args';
@@ -27,12 +27,12 @@ const meta = {
   type: 'naming',
 
   docs: {
-    description: 'Event argument itentifiers must start with _',
+    description: 'Event argument itentifiers must not start with _',
     category: 'Beam Style Guide Rules',
   },
 
   isDefault: true,
-  recommended: false,
+  recommended: true,
   defaultSetup: ['warn', 45],
 
   schema: [],

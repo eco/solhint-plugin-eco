@@ -32,7 +32,7 @@ const meta = {
   },
 
   isDefault: true,
-  recommended: false,
+  recommended: true,
   defaultSetup: ['warn', 45],
 
   schema: [],

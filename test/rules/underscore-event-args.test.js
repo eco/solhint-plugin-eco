@@ -14,7 +14,7 @@ describe('Rule: underscore-events-args', () => {
     },
   };
 
-  describe('with a event paramater that does not start with _', () => {
+  describe('with a event paramaters that start with _', () => {
     const code = contractWith('event badEvent(uint256 indexed _index, address _who);');
 
     it('should raise an underscore-event-args error', () => {
@@ -23,7 +23,7 @@ describe('Rule: underscore-events-args', () => {
     });
   });
 
-  describe('when all event parameters start with _', () => {
+  describe('when all event parameters does not start with _', () => {
     const code = contractWith('event goodEvent(uint256 indexed index, address who);');
 
     it('should not raise an underscore-event-args error', () => {
