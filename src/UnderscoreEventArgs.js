@@ -47,18 +47,18 @@ class UnderscoreEventArgs {
   }
 
   enterEventDefinition(ctx) {
-      const params = ctx.eventParameterList().eventParameter();
-      params.forEach((param) => {
-        const identifier = param.identifier().getText();
-        if (identifier.startsWith('_')) {
-          this.reporter.error(
-            ctx,
-            this.ruleId,
-            "event arguments can't start with _",
-          );
-        }
-      });
-    }
+    const params = ctx.eventParameterList().eventParameter();
+    params.forEach((param) => {
+      const identifier = param.identifier().getText();
+      if (identifier.startsWith('_')) {
+        this.reporter.error(
+          ctx,
+          this.ruleId,
+          "event arguments can't start with _",
+        );
+      }
+    });
   }
+}
 
 module.exports = UnderscoreEventArgs;
