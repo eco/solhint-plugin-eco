@@ -48,7 +48,6 @@ class UnderscoreFunctionArgs {
 
   enterFunctionDefinition(ctx) {
     const params = ctx.parameterList().parameter();
-
     params.forEach((param) => {
       const identifier = param.identifier().getText();
 
