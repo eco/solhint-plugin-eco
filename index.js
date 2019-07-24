@@ -6,5 +6,5 @@ const UnderscoreEventArgs = require('./src/UnderscoreEventArgs');
 
 module.exports = [
   UnderscoreFunctionArgs,
-  UnderscoreEventArgs
+  UnderscoreEventArgs,
 ];
