@@ -10,7 +10,7 @@ describe('Rule: underscore-events-args', () => {
       'beam',
     ],
     rules: {
-      'beam/underscore-events-args': 'error',
+      'beam/no-underscore-events-args': 'error',
     },
   };
 

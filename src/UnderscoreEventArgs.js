@@ -22,7 +22,7 @@
  * @fileoverview Require that events arguments not prefixed by _
  * @author Kirill Moizik <kirill@beam.io>
  */
-const ruleId = 'underscore-events-args';
+const ruleId = 'no-underscore-events-args';
 const meta = {
   type: 'naming',
 
