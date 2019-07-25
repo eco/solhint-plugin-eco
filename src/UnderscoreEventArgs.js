@@ -19,15 +19,15 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * @fileoverview Require that function arguments be prefixed by _
- * @author Michael Gregson <mgregson@beam.io>
+ * @fileoverview Require that events arguments not prefixed by _
+ * @author Kirill Moizik <kirill@beam.io>
  */
-const ruleId = 'underscore-function-args';
+const ruleId = 'no-underscore-events-args';
 const meta = {
   type: 'naming',
 
   docs: {
-    description: 'Function argument itentifiers must start with _',
+    description: 'Event argument itentifiers must not start with _',
     category: 'Beam Style Guide Rules',
   },
 
@@ -38,7 +38,7 @@ const meta = {
   schema: [],
 };
 
-class UnderscoreFunctionArgs {
+class UnderscoreEventArgs {
   constructor(reporter, config) {
     this.reporter = reporter;
     this.ruleId = ruleId;
@@ -46,20 +46,19 @@ class UnderscoreFunctionArgs {
     this.config = config;
   }
 
-  enterFunctionDefinition(ctx) {
-    const params = ctx.parameterList().parameter();
+  enterEventDefinition(ctx) {
+    const params = ctx.eventParameterList().eventParameter();
     params.forEach((param) => {
       const identifier = param.identifier().getText();
-
-      if (!identifier.startsWith('_')) {
+      if (identifier.startsWith('_')) {
         this.reporter.error(
           ctx,
           this.ruleId,
-          'function arguments must start with _',
+          "event arguments can't start with _",
         );
       }
     });
   }
 }
 
-module.exports = UnderscoreFunctionArgs;
+module.exports = UnderscoreEventArgs;
