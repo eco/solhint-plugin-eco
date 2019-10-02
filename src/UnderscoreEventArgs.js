@@ -1,5 +1,5 @@
 /**
- * Copyright 2018 Beam Network Inc.
+ * Copyright 2018 Eco Inc Inc.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to
@@ -20,7 +20,7 @@
  * SOFTWARE.
  *
  * @fileoverview Require that events arguments not prefixed by _
- * @author Kirill Moizik <kirill@beam.io>
+ * @author Kirill Moizik <kirill@eco.com>
  */
 const ruleId = 'no-underscore-events-args';
 const meta = {
@@ -28,7 +28,7 @@ const meta = {
 
   docs: {
     description: 'Event argument itentifiers must not start with _',
-    category: 'Beam Style Guide Rules',
+    category: 'Eco Style Guide Rules',
   },
 
   isDefault: true,

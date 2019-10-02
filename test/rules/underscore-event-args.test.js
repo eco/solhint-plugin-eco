@@ -2,15 +2,15 @@ const assert = require('assert');
 const linter = require('solhint/lib/index');
 const { contractWith } = require('solhint/test/common/contract-builder');
 
-jest.mock('solhint-plugin-beam');
+jest.mock('solhint-plugin-eco');
 
 describe('Rule: underscore-events-args', () => {
   const config = {
     plugins: [
-      'beam',
+      'eco',
     ],
     rules: {
-      'beam/no-underscore-events-args': 'error',
+      'eco/no-underscore-events-args': 'error',
     },
   };
 
