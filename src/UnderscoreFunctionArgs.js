@@ -1,5 +1,5 @@
 /**
- * Copyright 2018 Beam Network Inc.
+ * Copyright 2018 Eco Inc Inc.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to
@@ -20,7 +20,7 @@
  * SOFTWARE.
  *
  * @fileoverview Require that function arguments be prefixed by _
- * @author Michael Gregson <mgregson@beam.io>
+ * @author Michael Gregson <mgregson@eco.com>
  */
 const ruleId = 'underscore-function-args';
 const meta = {
@@ -28,7 +28,7 @@ const meta = {
 
   docs: {
     description: 'Function argument itentifiers must start with _',
-    category: 'Beam Style Guide Rules',
+    category: 'Eco Style Guide Rules',
   },
 
   isDefault: true,

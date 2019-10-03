@@ -1,7 +1,7 @@
 {
-  "name": "solhint-plugin-beam",
+  "name": "solhint-plugin-eco",
   "version": "0.1.0",
-  "description": "A solhint plugin to enfore Beam's style rules",
+  "description": "A solhint plugin to enfore Eco's style rules",
   "main": "index.js",
   "scripts": {
     "test": "jest",
@@ -9,25 +9,25 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/BeamNetwork/solhint-plugin-beam.git"
+    "url": "git+https://github.com/eco/solhint-plugin-eco.git"
   },
   "keywords": [
     "solhint",
     "solidity",
     "plugin"
   ],
-  "author": "Michael Gregson <mgregson@beam.io>",
+  "author": "Michael Gregson <mgregson@eco.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/BeamNetwork/solhint-plugin-beam/issues"
+    "url": "https://github.com/eco/solhint-plugin-eco/issues"
   },
-  "homepage": "https://github.com/BeamNetwork/solhint-plugin-beam#readme",
+  "homepage": "https://github.com/eco/solhint-plugin-eco#readme",
   "devDependencies": {
-    "eslint": "^5.16.0",
-    "eslint-config-airbnb-base": "^13.2.0",
+    "eslint": "^6.5.1",
+    "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-jest": "^22.13.6",
-    "jest": "^24.8.0",
-    "solhint": "^2.1.2"
+    "eslint-plugin-jest": "^22.17.0",
+    "jest": "^24.9.0",
+    "solhint": "^2.3.0"
   }
 }

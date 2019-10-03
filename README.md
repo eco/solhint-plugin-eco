@@ -1,8 +1,8 @@
-# Solhint Plugin for the Beam Network Style Guide _(solhint-plugin-beam)_
-[![Build Status](https://travis-ci.com/BeamNetwork/solhint-plugin-beam.svg?branch=master)](https://travis-ci.com/BeamNetwork/solhint-plugin-beam)
-> A solhint plugin to enforce Beam's style rules
+# Solhint Plugin for the Eco Inc Style Guide _(solhint-plugin-eco)_
+[![Build Status](https://travis-ci.com/eco/solhint-plugin-eco.svg?branch=master)](https://travis-ci.com/eco/solhint-plugin-eco)
+> A solhint plugin to enforce Eco's style rules
 
-Provides solhint rules to enforce the extra Solidity style rules used at Beam
+Provides solhint rules to enforce the extra Solidity style rules used at Eco
 Network.
 
 ## Table of Contents
@@ -14,26 +14,26 @@ Network.
 ## Install
 Install via NPM:
 ```bash
-npm install --save-dev solhint-plugin-beam
+npm install --save-dev solhint-plugin-eco
 ```
 
 Add to your solhint configuration and enable some rules:
 ```json
 {
   "plugins": [
-    "beam"
+    "eco"
   ],
   "rules": {
-    "beam/underscore-function-args": "error"
+    "eco/underscore-function-args": "error"
   }
 }
 ```
 
 ## Usage
 Provides the following rules:
- - `beam/underscore-function-args`
+ - `eco/underscore-function-args`
    Function arguments must start with `_` to help distinguish them from storage
    variables.
 
 ## License
-[MIT (c) Beam Network](./LICENSE)
+[MIT (c) Eco Inc](./LICENSE)
